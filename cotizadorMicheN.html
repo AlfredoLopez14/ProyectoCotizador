@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/Logo.png" />
+    <title>MICHENACAS</title>
+    <link rel="stylesheet" href="cssOr/styles2.css">
+</head>
+
+<body>
+    
+    <header class="content4">
+        <nav>
+            <h1 class="content5">MICHENACAS</h1>
+            <ul>
+                <li><a class="content6" href="index.html">Inicio</a></li>
+                <li><a class="content6" href="cuestionario.html">Prueba Tu Inglés</a></li>
+                <li><a class="content6" href="capitales.html">Capitales</a></li>
+            </ul>
+        </nav>
+        <img src="assets/MICHES.png" alt="">
+
+    </header>
+    <!-- <div class="container1">
+        <div class="slider">
+            <ul>
+                <li><img src="assets/imagenesC/Portada1.jpg" alt=""></li>
+                <li><img src="assets/imagenesC/MichesBienNacas.png" alt=""></li>
+                <li><img src="assets/imagenesC/mesa.png" alt=""></li>
+                <li><img src="assets/imagenesC/Tarros.png" alt=""></li>
+                <li><img src="assets/imagenesC/Vaso.png" alt=""></li>
+            </ul>
+        </div>
+    </div> -->
+    <!-- OPCIONES -->
+<div class="content7">
+    <section class="question-section" id="sec01">
+        <h3 class="content9">Tipo de cerveza</h3> <!--Pregunta 1-->
+        <label class="content10">
+            <input type="radio" value=0 name="sec01"> Clara
+        </label>
+        <label class="content10">
+            <input type="radio" value=0 name="sec01"> Obscura
+        </label>
+        <label class="content10">
+            <input type="radio" value=0 name="sec01"> Light
+        </label>
+    </section>
+
+    <section class="question-section" id="sec02">
+        <h3 class="content9">Especiales</h3>
+        <label class="content10">
+            <input type="radio" value=55 name="sec02"> Barril-Modelo Negra --- $55
+        </label>
+        <label class="content10">
+            <input type="radio" value=55 name="sec02"> 0 Alcohol-Heineken --- $55
+        </label>
+        <label class="content10">
+            <input type="radio" value=55 name="sec02"> Ámbar --- $55
+        </label>
+    </section>
+
+    <section class="question-section" id="sec02">
+        <!-- <label for="capitalselection">Marca</label> -->
+        <h3 class="content9">Marca</h3>
+        <select class="content11" name="capital01" id="capitalseleccion1" onchange="ShowSelected();">
+            <option class="content11 select option" value="">Selecciona una opcion</option>
+            <option class="content11" value=45>Corona --- $45</option>
+            <option class="content11" value=45>Victoria --- $45</option>
+            <option class="content11" value=42>Tecate --- $42</option>
+            <option class="content11" value=50>Leon --- $50</option>
+            <option class="content11" value=34>Indio --- $34</option>
+            <option class="content11" value=50>Modelo --- $50</option>
+        </select>
+    </section>
+    
+    <section class="question-section" id="sec04">
+            <h3 class="content9">Vaso</h3>
+        <select class="content11" name="capital01" id="capitalseleccion2" onchange="ShowSelected();">
+            <option class="content11 select option" value="">Selecciona una opcion</option>
+            <option class="content11" value=10>Normal --- $10</option>
+            <option class="content11" value=35>Tarro --- $35</option>
+            <option class="content11" value=20>KittyChela --- $20</option>
+            <option class="content11" value=45>LicuaChela --- $45</option>
+            <option class="content11" value=20>RotoChela --- $20</option>
+            <option class="content11" value=35>Crayola --- $35</option>
+        </select>
+    </section>
+
+    <!-- <section class="question-section" id="sec05">
+            <h3 class="content9">Escarchado</h3>
+        <select class="content11" name="capital01" id="capitalseleccion1" onchange="ShowSelected();">
+            <option class="content11 select option" value="">Selecciona una opcion</option>
+            <option class="content11" value="0">Limón/Tajín</option>
+            <option class="content11" value="0">chamoy/Tajín</option>
+            <option class="content11" value="0">limón/sal</option>
+            <option class="content11" value="0">Tamarindo/ajonjolí</option>
+            <option class="content11" value="0">Tamariondo/miguelito</option>
+        </select>
+    </section> -->
+
+    <section class="question-section" id="sec07">
+        <h3 class="content9">Escarchado</h3> <!--Pregunta 6-->
+        <label class="content10">
+            <input type="radio" value=0 name="sec07"> Limón/Tajín --- sn/costo
+        </label>
+        <label class="content10">
+            <input type="radio" value=0 name="sec07">Chamoy/Tajín --- sn/costo
+        </label>
+        <label class="content10">
+            <input type="radio" value=0 name="sec07"> Limón/Sal --- sn/costo
+        </label>
+        <label class="content10">
+            <input type="radio" value=0 name="sec07"> Tamarindo/Ajonjolí --- sn/costo
+        </label>
+        <label class="content10">
+            <input type="radio" value=0 name="sec07"> Tamariondo/Miguelito --- sn/costo
+        </label>
+    </section>
+
+        <section class="question-section" id="sec06">
+            <h3 class="content9">Preparación</h3> <!--Pregunta 4-->
+            <label class="content10">
+                <input type="checkbox" value=5 name="sec06"> Clamato --- $5
+            </label>
+            <label class="content10">
+                <input type="checkbox" value=5 name="sec06"> Maggi  --- $5
+            </label>
+            <label class="content10">
+                <input type="checkbox" value=5 name="sec06"> Inglesa  --- $5
+            </label>
+            <label class="content10">
+                <input type="checkbox" value=5 name="sec06"> Limón --- $5
+            </label>
+            <label class="content10">
+                <input type="checkbox" value=0 name="sec06"> Sal --- sn/costo
+            </label>
+        </section>
+
+        <section class="question-section" id="sec07">
+            <h3 class="content9">EXTRAS</h3> <!--Pregunta 6-->
+            <label class="content10">
+                <input type="checkbox" value=5 name="sec07"> Gomitas-Frutitas  --- $5
+            </label>
+            <label class="content10">
+                <input type="checkbox" value=5 name="sec07"> Panditas  --- $5
+            </label>
+            <label class="content10">
+                <input type="checkbox" value=5 name="sec07"> Viboritas  --- $5
+            </label>
+            <label class="content10">
+                <input type="checkbox" value=15 name="sec07"> Camarón  --- $15
+            </label>
+            <label class="content10">
+                <input type="checkbox" value=5 name="sec07"> Pepino  --- $5
+            </label>
+        </section>
+
+        <section class="question-section">
+            <h3 class="content9">Orden:</h3>
+            <!-- <div id="resumenCompra"></div> -->
+            <h2 id='textosalida'></h2>
+        </section>
+        <!-- <section class="question-section">
+            <h2 id="textosalidaTotal"></h2>
+        </section> -->
+		
+    
+        <button class="content8" id='sumar'>Ordenar</button><br> 
+        <button class="content8" id='reset'>Limpiar</button>
+    </p>  
+</div>
+<script src="jsOr/cotizasorJs.js"></script>
+</body>
